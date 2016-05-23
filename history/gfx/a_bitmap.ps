@@ -1,0 +1,30 @@
+%!
+%%Creator: Tom Kendig
+%%Title: color spectrum
+%%BoundingBox: 0 0 256 40
+
+/abitmap {
+gsave
+    /h 0.0 def
+    0 1 256 {
+    gsave
+
+    newpath
+    0 0 moveto
+    1 0 lineto
+    1 40 lineto
+    0 40 lineto
+    closepath
+    h 1 1 sethsbcolor
+    fill
+
+    grestore
+    /h h 1 256 div add def
+    1 0 translate
+    } for
+grestore
+} def
+
+abitmap
+
+showpage
